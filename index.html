@@ -6,6 +6,44 @@
     <title>Chat Application</title>
 </head>
 <body>
+    <form id="form" class="roomform">
+        <div class="box1">
+            <label for="roomId">
+                Room Id
+            </label>
+            <input 
+                type="text"
+                id="roomId"
+                name="roomId"
+                placeholder="Enter Room Id"
+            >
+        </div>
+        <div class="box2">
+            <button type="submit" class="btn">Login</button>
+
+        </div>
+    </form>
+
+    <div id="chat-data">
+        <h1>You joined the room as 
+            <span id="roomId"></span>
+            <button id="logoutbtn">Log out</button>
+            <button id="reset">Reset Chats</button>
+        </h1>
+        <div id="main-box">
+            <div id="chats-data" class="chatting-box">
+
+
+            </div>
+            <form class="type-box" id="type-box">
+                <input type="text" id="chat" name="message" placeholder="Enter msg" >
+                <button>+</button>
+
+            </form>
+
+        </div>
+
+    </div>
     
 </body>
 </html>
